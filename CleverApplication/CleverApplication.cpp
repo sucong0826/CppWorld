@@ -10,8 +10,10 @@
 #include "NamespaceHeader_F.h"
 
 using namespace NamespaceHeader;
-int NamespaceHeader::x = 2;
-int NamespaceHeader::y = 3;
+namespace NHeader = NamespaceHeader;
+
+int NHeader::x = 2;
+int NHeader::y = 3;
 
 int main()
 {
