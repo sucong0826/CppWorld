@@ -152,11 +152,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CleverApplication.cpp" />
+    <ClCompile Include="LocalStaticExtern.cpp" />
     <ClCompile Include="SafeConsts.cpp" />
+    <ClCompile Include="LocalExternImpl1.cpp" />
+    <ClCompile Include="LocalExternImpl2.cpp" />
     <ClCompile Include="StaticControl.cpp" />
     <ClCompile Include="StaticObjects.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="NamespaceHeader_F.h" />
+    <ClInclude Include="NamespaceHeader_S.h" />
+    <ClInclude Include="LocalStaticExtern.h" />
     <ClInclude Include="SafeConsts.h" />
     <ClInclude Include="StaticControl.h" />
     <ClInclude Include="StaticObjects.h" />

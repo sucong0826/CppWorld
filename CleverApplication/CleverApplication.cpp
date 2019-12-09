@@ -5,6 +5,13 @@
 #include <memory>
 #include "StaticControl.h"
 #include "StaticObjects.h"
+#include "LocalStaticExtern.h"
+#include "NamespaceHeader_S.h"
+#include "NamespaceHeader_F.h"
+
+using namespace NamespaceHeader;
+int NamespaceHeader::x = 2;
+int NamespaceHeader::y = 3;
 
 int main()
 {
@@ -38,6 +45,9 @@ int main()
 	static StaticObjects so2;		// default constructor required.
 	so1.printProperites();
 	so2.printProperites();
+
+	outer_test_func();
+	// inner_test_func(); can't be used because the method is static.
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
