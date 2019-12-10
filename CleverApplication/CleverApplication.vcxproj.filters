@@ -36,13 +36,13 @@
     <ClCompile Include="StaticObjects.cpp">
       <Filter>Source Files\src\name_control</Filter>
     </ClCompile>
-    <ClCompile Include="LocalStaticExtern.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="LocalExternImpl1.cpp">
       <Filter>Source Files\src\name_control</Filter>
     </ClCompile>
     <ClCompile Include="LocalExternImpl2.cpp">
+      <Filter>Source Files\src\name_control</Filter>
+    </ClCompile>
+    <ClCompile Include="LocalStaticExtern.cpp">
       <Filter>Source Files\src\name_control</Filter>
     </ClCompile>
   </ItemGroup>

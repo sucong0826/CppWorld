@@ -15,6 +15,11 @@ namespace NHeader = NamespaceHeader;
 int NHeader::x = 2;
 int NHeader::y = 3;
 
+void FriendInjection::print_counter(const FriendInjection::Us &rUs)
+{	
+	std::cout << "FriendInjection::print_counter() counter=" << rUs.counter << std::endl;
+}
+
 int main()
 {
     std::cout << "Hello World!\n";
@@ -50,6 +55,15 @@ int main()
 
 	outer_test_func();
 	// inner_test_func(); can't be used because the method is static.
+
+	// test_func_within_annoymous_ns() function can't be called
+	// because it is included in an annoymous namespace, any method
+	// in it will be static, that is, link inside. so it can't be accessed.
+	// test_func_within_annoymous_ns();
+
+	FriendInjection::Us rUs(0);
+	rUs.us_member();
+	FriendInjection::print_counter(rUs);
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
