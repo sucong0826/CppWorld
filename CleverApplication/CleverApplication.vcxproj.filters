@@ -22,6 +22,9 @@
     <Filter Include="Source Files\src\name_control">
       <UniqueIdentifier>{febe66b2-95ca-4d3d-8257-e0ab3542fd03}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\src\copy_control">
+      <UniqueIdentifier>{f89ccf23-00ea-4ff5-b80d-b97c61369f72}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CleverApplication.cpp">
@@ -45,6 +48,9 @@
     <ClCompile Include="LocalStaticExtern.cpp">
       <Filter>Source Files\src\name_control</Filter>
     </ClCompile>
+    <ClCompile Include="Person.cpp">
+      <Filter>Source Files\src\copy_control</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SafeConsts.h">
@@ -63,6 +69,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="NamespaceHeader_S.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Person.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

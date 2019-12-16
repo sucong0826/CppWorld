@@ -8,6 +8,7 @@
 #include "LocalStaticExtern.h"
 #include "NamespaceHeader_S.h"
 #include "NamespaceHeader_F.h"
+#include "Person.h"
 
 using namespace NamespaceHeader;
 namespace NHeader = NamespaceHeader;
@@ -64,6 +65,13 @@ int main()
 	FriendInjection::Us rUs(0);
 	rUs.us_member();
 	FriendInjection::print_counter(rUs);
+
+	// how to create a person
+	// here are the ways:
+	Person normal("Clever", 12);
+	Person* person = new Person("Danm", 15);
+	Person& copy = *person;
+	delete person;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
