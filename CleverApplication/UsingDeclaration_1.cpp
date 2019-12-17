@@ -2,9 +2,9 @@
 
 void h()
 {
-	using namespace U;	// using directive
-	using V::f;
+	//using namespace U;	// using directive
+	//using V::f;
 
-	f();
-	U::f();
+	//f();
+	//U::f();
 }

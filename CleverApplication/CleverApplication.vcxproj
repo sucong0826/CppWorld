@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -151,6 +151,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Arithmetic.cpp" />
     <ClCompile Include="CleverApplication.cpp" />
     <ClCompile Include="LocalStaticExtern.cpp" />
     <ClCompile Include="Person.cpp" />
@@ -158,16 +159,23 @@
     <ClCompile Include="LocalExternImpl1.cpp" />
     <ClCompile Include="LocalExternImpl2.cpp" />
     <ClCompile Include="StaticControl.cpp" />
+    <ClCompile Include="StaticInt.cpp" />
     <ClCompile Include="StaticObjects.cpp" />
+    <ClCompile Include="UsingDeclaration_1.cpp" />
+    <ClCompile Include="UsingDeclaration_2.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="NamespaceInt.h" />
     <ClInclude Include="NamespaceHeader_F.h" />
     <ClInclude Include="NamespaceHeader_S.h" />
     <ClInclude Include="LocalStaticExtern.h" />
     <ClInclude Include="Person.h" />
+    <ClInclude Include="NamespaceMath.h" />
     <ClInclude Include="SafeConsts.h" />
     <ClInclude Include="StaticControl.h" />
+    <ClInclude Include="StaticInt.h" />
     <ClInclude Include="StaticObjects.h" />
+    <ClInclude Include="UsingDeclaration.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

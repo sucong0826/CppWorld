@@ -9,6 +9,7 @@
 #include "NamespaceHeader_S.h"
 #include "NamespaceHeader_F.h"
 #include "Person.h"
+#include "StaticInt.h"
 
 using namespace NamespaceHeader;
 namespace NHeader = NamespaceHeader;
@@ -72,6 +73,13 @@ int main()
 	Person* person = new Person("Danm", 15);
 	Person& copy = *person;
 	delete person;
+
+	int StaticInt::x = 1;
+	int StaticInt::y = x + 1;
+
+	StaticInt static_int, static_int_copy;
+	static_int.print();
+	static_int_copy.print();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

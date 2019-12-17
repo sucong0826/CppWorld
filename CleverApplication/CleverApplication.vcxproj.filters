@@ -51,6 +51,18 @@
     <ClCompile Include="Person.cpp">
       <Filter>Source Files\src\copy_control</Filter>
     </ClCompile>
+    <ClCompile Include="StaticInt.cpp">
+      <Filter>Source Files\src\name_control</Filter>
+    </ClCompile>
+    <ClCompile Include="Arithmetic.cpp">
+      <Filter>Source Files\src\name_control</Filter>
+    </ClCompile>
+    <ClCompile Include="UsingDeclaration_1.cpp">
+      <Filter>Source Files\src\name_control</Filter>
+    </ClCompile>
+    <ClCompile Include="UsingDeclaration_2.cpp">
+      <Filter>Source Files\src\name_control</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SafeConsts.h">
@@ -72,6 +84,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Person.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NamespaceInt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NamespaceMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UsingDeclaration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticInt.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
