@@ -8,6 +8,7 @@ public:
 	~Person();
 	Person(const Person& person);
 	Person& operator=(const Person& person);
+	int getAge() const { return age; }
 
 private:
 	int age;

@@ -10,6 +10,7 @@
 #include "NamespaceHeader_F.h"
 #include "Person.h"
 #include "StaticInt.h"
+#include "TestHelper.h"
 
 using namespace NamespaceHeader;
 namespace NHeader = NamespaceHeader;
@@ -70,16 +71,20 @@ int main()
 	// how to create a person
 	// here are the ways:
 	Person normal("Clever", 12);
-	Person* person = new Person("Danm", 15);
+	Person* person = new Person("Damn", 15);
 	Person& copy = *person;
+
+	std::cout << "person addr=" << person << std::endl;
+	std::cout << "copy addr=" << &copy << std::endl;
+	
+	TestHelper::fcn(person, copy);
 	delete person;
-
-	int StaticInt::x = 1;
-	int StaticInt::y = x + 1;
-
-	StaticInt static_int, static_int_copy;
-	static_int.print();
-	static_int_copy.print();
+	
+	// static fields are shared by all instances
+	// verified!
+	// StaticInt static_int, static_int_copy;
+	// static_int.print();
+	// static_int_copy.print();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

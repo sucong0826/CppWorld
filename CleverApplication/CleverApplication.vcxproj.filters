@@ -25,6 +25,9 @@
     <Filter Include="Source Files\src\copy_control">
       <UniqueIdentifier>{f89ccf23-00ea-4ff5-b80d-b97c61369f72}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\src\helper">
+      <UniqueIdentifier>{1aa542fa-bdd1-4d88-8cf1-2545627ca077}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CleverApplication.cpp">
@@ -63,6 +66,9 @@
     <ClCompile Include="UsingDeclaration_2.cpp">
       <Filter>Source Files\src\name_control</Filter>
     </ClCompile>
+    <ClCompile Include="TestHelper.cpp">
+      <Filter>Source Files\src\name_control</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SafeConsts.h">
@@ -97,6 +103,9 @@
     </ClInclude>
     <ClInclude Include="StaticInt.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestHelper.h">
+      <Filter>Source Files\src\helper</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
