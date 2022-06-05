@@ -28,6 +28,9 @@
     <Filter Include="Source Files\src\helper">
       <UniqueIdentifier>{1aa542fa-bdd1-4d88-8cf1-2545627ca077}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\src\template">
+      <UniqueIdentifier>{5b51d326-b4e7-4fef-9f5a-d44be48a3dbe}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CleverApplication.cpp">
@@ -69,6 +72,9 @@
     <ClCompile Include="TestHelper.cpp">
       <Filter>Source Files\src\name_control</Filter>
     </ClCompile>
+    <ClCompile Include="UrandTest.cpp">
+      <Filter>Source Files\src\template</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SafeConsts.h">
@@ -106,6 +112,9 @@
     </ClInclude>
     <ClInclude Include="TestHelper.h">
       <Filter>Source Files\src\helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Urand.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

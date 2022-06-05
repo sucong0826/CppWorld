@@ -162,6 +162,7 @@
     <ClCompile Include="StaticControl.cpp" />
     <ClCompile Include="StaticInt.cpp" />
     <ClCompile Include="StaticObjects.cpp" />
+    <ClCompile Include="UrandTest.cpp" />
     <ClCompile Include="UsingDeclaration_1.cpp" />
     <ClCompile Include="UsingDeclaration_2.cpp" />
   </ItemGroup>
@@ -177,6 +178,7 @@
     <ClInclude Include="StaticControl.h" />
     <ClInclude Include="StaticInt.h" />
     <ClInclude Include="StaticObjects.h" />
+    <ClInclude Include="Urand.h" />
     <ClInclude Include="UsingDeclaration.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
