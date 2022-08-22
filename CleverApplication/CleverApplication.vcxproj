@@ -153,20 +153,30 @@
   <ItemGroup>
     <ClCompile Include="Arithmetic.cpp" />
     <ClCompile Include="CleverApplication.cpp" />
+    <ClCompile Include="CustomizedQueue.cpp" />
+    <ClCompile Include="DotTemplate.cpp" />
+    <ClCompile Include="FuncDef.cpp" />
     <ClCompile Include="LocalStaticExtern.cpp" />
+    <ClCompile Include="MemberClass.cpp" />
     <ClCompile Include="Person.cpp" />
+    <ClCompile Include="PrintSeq.cpp" />
     <ClCompile Include="SafeConsts.cpp" />
     <ClCompile Include="LocalExternImpl1.cpp" />
     <ClCompile Include="LocalExternImpl2.cpp" />
+    <ClCompile Include="TempTemp.cpp" />
+    <ClCompile Include="TempTemp4.cpp" />
     <ClCompile Include="TestHelper.cpp" />
     <ClCompile Include="StaticControl.cpp" />
     <ClCompile Include="StaticInt.cpp" />
     <ClCompile Include="StaticObjects.cpp" />
+    <ClCompile Include="TypenameID.cpp" />
     <ClCompile Include="UrandTest.cpp" />
     <ClCompile Include="UsingDeclaration_1.cpp" />
     <ClCompile Include="UsingDeclaration_2.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CustomizedQueue.h" />
+    <ClInclude Include="EnumConst.h" />
     <ClInclude Include="TestHelper.h" />
     <ClInclude Include="NamespaceInt.h" />
     <ClInclude Include="NamespaceHeader_F.h" />

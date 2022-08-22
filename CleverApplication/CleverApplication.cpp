@@ -11,6 +11,8 @@
 #include "Person.h"
 #include "StaticInt.h"
 #include "TestHelper.h"
+#include "EnumConst.h"
+#include "CustomizedQueue.h"
 
 using namespace NamespaceHeader;
 namespace NHeader = NamespaceHeader;
@@ -79,6 +81,40 @@ int main()
 	
 	TestHelper::fcn(person, copy);
 	delete person;
+
+	UserType userType = BACKGROUND;
+	if (userType == BACKGROUND)
+	{
+		std::cout << "user type is background user" << std::endl;
+	}
+	else if (userType == NORMAL)
+	{
+		std::cout << "user type is a normal user" << std::endl;
+	}
+
+	unsigned int a = 1;
+	a = 4294967296;
+	std::cout << "the unsigned int a = " << a << std::endl;
+
+	CustomizedQueue<int, 3> queue;
+	bool is_last_node_added = queue.add_last(0);
+	queue.add_last(1);
+	queue.add_last(2);
+	queue.add_last(3);
+	bool is_empty = queue.is_empty();
+	size_t size = queue.size();
+	std::cout << "is_last_node_added = " << is_last_node_added << ", is_empty=" << is_empty << ", size=" << size << std::endl;
+	
+	// queue.remove_last();
+	// queue.remove_last();
+	// queue.remove_all();
+	int* last_val = queue.get_last();
+	int* first_val = queue.get_first();
+	int* value = queue.get(10);
+	bool is_set = queue.set(0, 4);
+	is_set = queue.set(1, 5);
+	is_set = queue.set(2, 6);
+	is_set = queue.set(5, 10);
 	
 	// static fields are shared by all instances
 	// verified!

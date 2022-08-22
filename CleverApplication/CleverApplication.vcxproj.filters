@@ -75,6 +75,30 @@
     <ClCompile Include="UrandTest.cpp">
       <Filter>Source Files\src\template</Filter>
     </ClCompile>
+    <ClCompile Include="DotTemplate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncDef.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MemberClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PrintSeq.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TempTemp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TempTemp4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TypenameID.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomizedQueue.cpp">
+      <Filter>Source Files\src\template</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SafeConsts.h">
@@ -114,6 +138,12 @@
       <Filter>Source Files\src\helper</Filter>
     </ClInclude>
     <ClInclude Include="Urand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EnumConst.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomizedQueue.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

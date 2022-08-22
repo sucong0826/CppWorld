@@ -16,8 +16,8 @@ public:
 	};
 };
 
-int main()
-{
-	X<Y> xy;
-	xy.f();
-}
+//int main()
+//{
+//	X<Y> xy;
+//	xy.f();
+//}

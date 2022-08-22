@@ -58,20 +58,28 @@ public:
 	void append(const T& t) { seq.push_back(t); }
 	T* begin() { return seq.begin(); }
 	T* end() { return seq.end(); }	
-	std::string get_des() { return seq.get_des(); }
+	// std::string get_des() { return seq.get_des(); }
 };
 
-int main()
+template<typename T> 
+class Temp
 {
-	Container<int, Array> container;
-	container.append(1);
-	container.append(2);
+public:
+	template<class X> Temp(const Temp<X>&);
+	template<class X> Temp(const Temp<T>&);
+};
 
-	int* p = container.begin();
-	while (p != container.end())
-	{
-		cout << *p++ << endl;
-	}
-
-	container.get_des(); // no compile error but have runtime error
-}
+//int main()
+//{
+//	Container<int, Array> container;
+//	container.append(1);
+//	container.append(2);
+//
+//	int* p = container.begin();
+//	while (p != container.end())
+//	{
+//		cout << *p++ << endl;
+//	}
+//
+//	// container.get_des(); // no compile error but have runtime error
+//}
