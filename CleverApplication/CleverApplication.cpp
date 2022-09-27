@@ -13,6 +13,10 @@
 #include "TestHelper.h"
 #include "EnumConst.h"
 #include "CustomizedQueue.h"
+#include "TheFirstHeader.h"
+#include "TheSecondHeader.h"
+#include "MeetingCommandShell.h"
+#include "MeetingVideoCommandArgument.h"
 
 using namespace NamespaceHeader;
 namespace NHeader = NamespaceHeader;
@@ -121,6 +125,42 @@ int main()
 	// StaticInt static_int, static_int_copy;
 	// static_int.print();
 	// static_int_copy.print();
+
+	// command shell test cases:
+	MeetingCommandShell* cmdShell = new MeetingCommandShell();
+	if (cmdShell)
+	{
+		MeetingVideoCommandArgument arg;
+		arg.videoFeatureType = 2;
+		cmdShell->ReceiveCommand(1, (MeetingCommandArgument&)arg);
+
+		FastCommandShell& fastCmdShell = FastCommandShell::GetInstance();
+		{
+			int cmd = 1;
+			fastCmdShell
+				.ReceiveCommand(1, &arg)
+				->ExecuteCommand([](int command, MeetingCommandArgument* arg) 
+					{
+						if (command == 1)
+						{
+							const char *output = "hello world";
+							return (void*)output;
+						}
+						return (void*)nullptr;
+					})
+				->OnCommandExecuted([](int command, void* payload) 
+					{
+						if (command == 1)
+						{
+							const char* output = static_cast<const char*>(payload);
+							std::string str = output;
+							std::cout << "FastCommand::OnCommandExecuted() command=" << command << ", payload=" << str << std::endl;
+						}
+					})
+				->Run();
+
+		}
+	}
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

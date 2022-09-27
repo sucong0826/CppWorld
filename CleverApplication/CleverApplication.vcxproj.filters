@@ -31,6 +31,15 @@
     <Filter Include="Source Files\src\template">
       <UniqueIdentifier>{5b51d326-b4e7-4fef-9f5a-d44be48a3dbe}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\src\head_include">
+      <UniqueIdentifier>{7527463b-d569-40ac-8bbf-c22dc2653629}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\command">
+      <UniqueIdentifier>{86c4e647-7b43-4ec9-969d-c1a56aecdaf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\command_impl">
+      <UniqueIdentifier>{64a9bcf4-880f-4350-affb-db0418ec0649}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CleverApplication.cpp">
@@ -99,6 +108,24 @@
     <ClCompile Include="CustomizedQueue.cpp">
       <Filter>Source Files\src\template</Filter>
     </ClCompile>
+    <ClCompile Include="MeetingCommandShellImpl.cpp">
+      <Filter>Source Files\src\command_impl</Filter>
+    </ClCompile>
+    <ClCompile Include="MeetingCommandReceiver.cpp">
+      <Filter>Source Files\src\command_impl</Filter>
+    </ClCompile>
+    <ClCompile Include="MeetingCommandDispatcher.cpp">
+      <Filter>Source Files\src\command_impl</Filter>
+    </ClCompile>
+    <ClCompile Include="MeetingCommandExecutor.cpp">
+      <Filter>Source Files\src\command_impl</Filter>
+    </ClCompile>
+    <ClCompile Include="MeetingCommandChannel.cpp">
+      <Filter>Source Files\src\command_impl</Filter>
+    </ClCompile>
+    <ClCompile Include="MeetingVideoCommandArgument.cpp">
+      <Filter>Source Files\src\command_impl</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SafeConsts.h">
@@ -145,6 +172,45 @@
     </ClInclude>
     <ClInclude Include="CustomizedQueue.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TheFirstHeader.h">
+      <Filter>Source Files\src\head_include</Filter>
+    </ClInclude>
+    <ClInclude Include="TheSecondHeader.h">
+      <Filter>Source Files\src\head_include</Filter>
+    </ClInclude>
+    <ClInclude Include="IMeetingCommandReceiver.h">
+      <Filter>Header Files\command</Filter>
+    </ClInclude>
+    <ClInclude Include="MeetingCommandArgument.h">
+      <Filter>Header Files\command</Filter>
+    </ClInclude>
+    <ClInclude Include="IMeetingCommandDispatcher.h">
+      <Filter>Header Files\command</Filter>
+    </ClInclude>
+    <ClInclude Include="IMeetingCommandExecutor.h">
+      <Filter>Header Files\command</Filter>
+    </ClInclude>
+    <ClInclude Include="IMeetingCommandChannel.h">
+      <Filter>Header Files\command</Filter>
+    </ClInclude>
+    <ClInclude Include="MeetingCommandShell.h">
+      <Filter>Header Files\command</Filter>
+    </ClInclude>
+    <ClInclude Include="MeetingCommandReceiver.h">
+      <Filter>Header Files\command</Filter>
+    </ClInclude>
+    <ClInclude Include="MeetingCommandDispatcher.h">
+      <Filter>Header Files\command</Filter>
+    </ClInclude>
+    <ClInclude Include="MeetingCommandExecutor.h">
+      <Filter>Header Files\command</Filter>
+    </ClInclude>
+    <ClInclude Include="MeetingCommandChannel.h">
+      <Filter>Header Files\command</Filter>
+    </ClInclude>
+    <ClInclude Include="MeetingVideoCommandArgument.h">
+      <Filter>Header Files\command</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -29,26 +29,26 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -157,6 +157,12 @@
     <ClCompile Include="DotTemplate.cpp" />
     <ClCompile Include="FuncDef.cpp" />
     <ClCompile Include="LocalStaticExtern.cpp" />
+    <ClCompile Include="MeetingCommandChannel.cpp" />
+    <ClCompile Include="MeetingCommandDispatcher.cpp" />
+    <ClCompile Include="MeetingCommandExecutor.cpp" />
+    <ClCompile Include="MeetingCommandReceiver.cpp" />
+    <ClCompile Include="MeetingCommandShellImpl.cpp" />
+    <ClCompile Include="MeetingVideoCommandArgument.cpp" />
     <ClCompile Include="MemberClass.cpp" />
     <ClCompile Include="Person.cpp" />
     <ClCompile Include="PrintSeq.cpp" />
@@ -177,6 +183,18 @@
   <ItemGroup>
     <ClInclude Include="CustomizedQueue.h" />
     <ClInclude Include="EnumConst.h" />
+    <ClInclude Include="IMeetingCommandChannel.h" />
+    <ClInclude Include="IMeetingCommandDispatcher.h" />
+    <ClInclude Include="IMeetingCommandExecutor.h" />
+    <ClInclude Include="IMeetingCommandReceiver.h" />
+    <ClInclude Include="MeetingCommandArgument.h" />
+    <ClInclude Include="MeetingCommandChannel.h" />
+    <ClInclude Include="MeetingCommandDispatcher.h" />
+    <ClInclude Include="MeetingCommandExecutor.h" />
+    <ClInclude Include="MeetingCommandReceiver.h" />
+    <ClInclude Include="MeetingCommandShell.h" />
+    <ClInclude Include="MeetingVideoCommandArgument.h" />
+    <ClInclude Include="TheFirstHeader.h" />
     <ClInclude Include="TestHelper.h" />
     <ClInclude Include="NamespaceInt.h" />
     <ClInclude Include="NamespaceHeader_F.h" />
@@ -188,6 +206,7 @@
     <ClInclude Include="StaticControl.h" />
     <ClInclude Include="StaticInt.h" />
     <ClInclude Include="StaticObjects.h" />
+    <ClInclude Include="TheSecondHeader.h" />
     <ClInclude Include="Urand.h" />
     <ClInclude Include="UsingDeclaration.h" />
   </ItemGroup>
