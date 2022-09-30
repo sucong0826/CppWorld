@@ -17,6 +17,8 @@
 #include "TheSecondHeader.h"
 #include "MeetingCommandShell.h"
 #include "MeetingVideoCommandArgument.h"
+#include "ValistTemplate.h"
+#include "FastCommandShell.h"
 
 using namespace NamespaceHeader;
 namespace NHeader = NamespaceHeader;
@@ -134,32 +136,52 @@ int main()
 		arg.videoFeatureType = 2;
 		cmdShell->ReceiveCommand(1, (MeetingCommandArgument&)arg);
 
-		FastCommandShell& fastCmdShell = FastCommandShell::GetInstance();
-		{
-			int cmd = 1;
-			fastCmdShell
-				.ReceiveCommand(1, &arg)
-				->ExecuteCommand([](int command, MeetingCommandArgument* arg) 
-					{
-						if (command == 1)
-						{
-							const char *output = "hello world";
-							return (void*)output;
-						}
-						return (void*)nullptr;
-					})
-				->OnCommandExecuted([](int command, void* payload) 
-					{
-						if (command == 1)
-						{
-							const char* output = static_cast<const char*>(payload);
-							std::string str = output;
-							std::cout << "FastCommand::OnCommandExecuted() command=" << command << ", payload=" << str << std::endl;
-						}
-					})
-				->Run();
+		FastCommandShell::NewFastCommand(1)
+			->ExecuteCommand(
+				[](int command) -> void
+				{
+					std::cout << "ExecuteCommand() command=" << command << std::endl;
+				})
+			->OnCommandExecuted(
+				[](int command) -> void
+				{
+					std::cout << "OnCommandExecuted() command=" << command << std::endl;
+				})
+			->Run();
 
-		}
+		FastCommandShell::NewFastCommand<MeetingVideoCommandArgument>(1, &arg)
+			->ExecuteCommand(
+				[](int command, MeetingVideoCommandArgument* input) -> void
+				{
+					std::cout << "ExecuteCommand() command=" << command << ", input=" << input->videoFeatureType << std::endl;
+				})
+			->OnCommandExecuted(
+				[](int command) -> void
+				{
+					std::cout << "OnCommandExecuted() command=" << command << std::endl;
+				})
+					->Run();
+
+
+		FastCommandShell::NewFastCommandInputOutput<MeetingVideoCommandArgument, int>(1, &arg)
+			->ExecuteCommand([](int command, MeetingVideoCommandArgument* input) -> int*
+				{
+					int sum = 0;
+					if (command == 1)
+					{
+						sum = input->videoFeatureType + command;
+					}
+
+					return &sum;
+				})
+			->OnCommandExecuted([](int command, int* output) -> void 
+				{
+					if (command == 1 && output)
+					{
+						int sum = *output;
+						std::cout << "OnCommandExecuted() output=" << sum << std::endl;
+					}
+				})->Run();
 	}
 }
 

@@ -40,6 +40,9 @@
     <Filter Include="Source Files\src\command_impl">
       <UniqueIdentifier>{64a9bcf4-880f-4350-affb-db0418ec0649}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\command\fastcommand">
+      <UniqueIdentifier>{31e08631-ea07-4a5e-b69e-f36b6d232d73}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CleverApplication.cpp">
@@ -126,6 +129,9 @@
     <ClCompile Include="MeetingVideoCommandArgument.cpp">
       <Filter>Source Files\src\command_impl</Filter>
     </ClCompile>
+    <ClCompile Include="ValistTemplate.cpp">
+      <Filter>Source Files\src\template</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SafeConsts.h">
@@ -211,6 +217,21 @@
     </ClInclude>
     <ClInclude Include="MeetingVideoCommandArgument.h">
       <Filter>Header Files\command</Filter>
+    </ClInclude>
+    <ClInclude Include="ValistTemplate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FastCommandInput.h">
+      <Filter>Header Files\command\fastcommand</Filter>
+    </ClInclude>
+    <ClInclude Include="FastCommandOutput.h">
+      <Filter>Header Files\command\fastcommand</Filter>
+    </ClInclude>
+    <ClInclude Include="FastCommand.h">
+      <Filter>Header Files\command\fastcommand</Filter>
+    </ClInclude>
+    <ClInclude Include="FastCommandShell.h">
+      <Filter>Header Files\command\fastcommand</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

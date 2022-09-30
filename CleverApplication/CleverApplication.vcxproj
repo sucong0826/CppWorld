@@ -179,10 +179,15 @@
     <ClCompile Include="UrandTest.cpp" />
     <ClCompile Include="UsingDeclaration_1.cpp" />
     <ClCompile Include="UsingDeclaration_2.cpp" />
+    <ClCompile Include="ValistTemplate.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CustomizedQueue.h" />
     <ClInclude Include="EnumConst.h" />
+    <ClInclude Include="FastCommand.h" />
+    <ClInclude Include="FastCommandInput.h" />
+    <ClInclude Include="FastCommandOutput.h" />
+    <ClInclude Include="FastCommandShell.h" />
     <ClInclude Include="IMeetingCommandChannel.h" />
     <ClInclude Include="IMeetingCommandDispatcher.h" />
     <ClInclude Include="IMeetingCommandExecutor.h" />
@@ -209,6 +214,7 @@
     <ClInclude Include="TheSecondHeader.h" />
     <ClInclude Include="Urand.h" />
     <ClInclude Include="UsingDeclaration.h" />
+    <ClInclude Include="ValistTemplate.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
